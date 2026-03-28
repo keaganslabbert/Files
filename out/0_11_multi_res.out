@@ -1,0 +1,24 @@
+
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+
+-----------------------------------Running on kernel thread 4: P1 
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1 req R1: waiting
+
+-----------------------------------Running on kernel thread 4: P1 
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: P2 
+-----------------------------------Terminated: P3 
+P1 req R1: acquired
+Available: R1 R1 
+P1 rel R1: released
+Available: R1 R1 R1 
+Wake up process P2 waiting for R1
+P2: ready
+P1 terminated

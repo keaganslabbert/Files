@@ -1,0 +1,21 @@
+Processes P1 2 P2 2 P3 2
+ReadyProcesses 3
+Resources R1 R2 R3
+
+Process P1
+ req R1
+ rel R1
+ req R1
+ rel R1
+
+Process P2
+ req R2
+ rel R2
+ req R2
+ rel R2
+
+Process P3
+ req R3
+ rel R3
+ req R3
+ rel R3

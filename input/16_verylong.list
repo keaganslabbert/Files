@@ -1,0 +1,64 @@
+Processes P1 5 P2 4 P3 3 P4 2 P5 1 P6 0
+ReadyProcesses 3
+Resources R1 R2
+
+Process P1
+ req R1
+ req R2
+ rel R1
+ rel R2
+ req R1
+ req R2
+ rel R1
+ rel R2
+
+Process P2
+ req R1
+ req R2
+ rel R1
+ rel R2
+ req R1
+ req R2
+ rel R1
+ rel R2
+
+Process P3
+ req R1
+ req R2
+ rel R1
+ rel R2
+ req R1
+ req R2
+ rel R1
+ rel R2
+
+Process P4
+ req R1
+ req R2
+ rel R1
+ rel R2
+ req R1
+ req R2
+ rel R1
+ rel R2
+
+Process P5
+ req R1
+ req R2
+ rel R1
+ rel R2
+ req R1
+ req R2
+ rel R1
+ rel R2
+
+Process P6
+ req R1
+ req R2
+ rel R1
+ rel R2
+ req R1
+ req R2
+ rel R1
+ rel R2
+

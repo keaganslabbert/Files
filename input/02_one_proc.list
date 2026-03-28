@@ -1,0 +1,7 @@
+Processes P1 3
+ReadyProcesses 1
+Resources R1
+
+Process P1
+ req R1
+ rel R1

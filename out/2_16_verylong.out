@@ -1,0 +1,83 @@
+
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P4: ready
+New arrivals in the ready queue: P4 
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: P2 P3 P4 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1 req R1: acquired
+Available: R2 
+P1 req R2: acquired
+Available: 
+P1 rel R1: released
+Available: 
+Wake up process P2 waiting for R1
+P2: ready
+P1 rel R2: released
+Available: R2 
+Wake up process P3 waiting for R2
+P3: ready
+P1 req R1: waiting
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: 
+-----------------------------------Waiting: P4 P5 P1 P6 
+-----------------------------------Terminated: 
+P3 req R2: acquired
+Available: 
+P3 rel R1: released
+Available: R1 
+Wake up process P4 waiting for R1
+P4: ready
+P3 rel R2: released
+Available: R1 R2 
+P3 req R1: acquired
+Available: R2 
+P3 req R2: acquired
+Available: 
+P3 rel R1: released
+Available: R1 
+Wake up process P5 waiting for R1
+P5: ready
+P3 rel R2: released
+Available: R1 R2 
+P3 terminated
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: 
+-----------------------------------Waiting: P2 P4 
+-----------------------------------Terminated: P3 P5 
+P6 req R1: acquired
+Available: R2 
+P6 req R2: acquired
+Available: 
+P6 rel R1: released
+Available: R1 
+Wake up process P2 waiting for R1
+P2: ready
+P6 rel R2: released
+Available: R2 
+Wake up process P2 waiting for R2
+P2: ready
+P6 req R1: waiting
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: P4 
+-----------------------------------Terminated: P3 P5 P2 P6 
+P1 req R2: acquired
+Available: 
+P1 rel R1: released
+Available: R1 
+Wake up process P4 waiting for R1
+P4: ready
+P1 rel R2: released
+Available: R1 R2 
+P1 terminated

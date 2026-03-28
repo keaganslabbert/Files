@@ -1,0 +1,15 @@
+
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1 req R2: acquired
+Available: R1 
+P1 rel R2: released
+Available: R1 R2 
+P1 terminated

@@ -1,0 +1,34 @@
+
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 
+-----------------------------------Waiting: P3 
+-----------------------------------Terminated: 
+P6: no instruction to execute
+P6 terminated
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: 
+-----------------------------------Waiting: P1 
+-----------------------------------Terminated: P4 P5 P6 
+P3 req R1: acquired
+Available: R2 
+P3 req R2: acquired
+Available: 
+P3: ready
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P4 P5 P6 P3 P2 
+P1 req R2: acquired
+Available: R1 
+P1 rel R2: released
+Available: R1 R2 
+P1 terminated
