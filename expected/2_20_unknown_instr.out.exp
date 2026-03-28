@@ -1,0 +1,28 @@
+
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1 req R1: acquired
+Available: R2 
+P1 rel R1: released
+Available: R1 R2 
+P1 req R2: acquired
+Available: R1 
+P1 rel R2: released
+Available: R1 R2 
+P1 terminated
+P2: unknown instruction
+P2 terminated
+P3 req R1: acquired
+Available: R2 
+P3 req R2: acquired
+Available: 
+P3 rel R1: released
+Available: R1 
+P3 rel R2: released
+Available: R1 R2 
+P3 terminated
+
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P1 P2 P3 

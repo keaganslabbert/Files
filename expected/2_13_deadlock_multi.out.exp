@@ -1,0 +1,35 @@
+
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1 req R1: acquired
+Available: R2 R2 R3 R4 
+New arrivals in ready queue: P2 P2: ready
+P1 req R2: acquired
+Available: R2 R3 R4 
+New arrivals in ready queue: P3 P3: ready
+P1 terminated
+P2 req R2: acquired
+Available: R3 R4 
+New arrivals in ready queue: P6 P6: ready
+P2 req R1: waiting
+New arrivals in ready queue: P7 P7: ready
+P3 req R2: waiting
+New arrivals in ready queue: P4 P4: ready
+P6: no instruction to execute
+P6 terminated
+New arrivals in ready queue: P5 P5: ready
+P7: no instruction to execute
+P7 terminated
+P4 req R3: acquired
+Available: R4 
+P4 req R2: waiting
+P5 req R4: acquired
+Available: 
+P5 rel R4: released
+Available: R4 
+P5 terminated
+No deadlock detected, but blocked process(es) found:
+-----------------------------------Ready: 
+-----------------------------------Waiting: P2 P3 P4 
+-----------------------------------Terminated: P1 P6 P7 P5 

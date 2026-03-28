@@ -1,0 +1,35 @@
+
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1 req R1: acquired
+Available: R2 R3 
+P1 rel R1: released
+Available: R1 R2 R3 
+P1 req R1: acquired
+Available: R2 R3 
+P1 rel R1: released
+Available: R1 R2 R3 
+P1 terminated
+P2 req R2: acquired
+Available: R1 R3 
+P2 rel R2: released
+Available: R1 R2 R3 
+P2 req R2: acquired
+Available: R1 R3 
+P2 rel R2: released
+Available: R1 R2 R3 
+P2 terminated
+P3 req R3: acquired
+Available: R1 R2 
+P3 rel R3: released
+Available: R1 R2 R3 
+P3 req R3: acquired
+Available: R1 R2 
+P3 rel R3: released
+Available: R1 R2 R3 
+P3 terminated
+
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P1 P2 P3 

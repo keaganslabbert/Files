@@ -1,0 +1,51 @@
+
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1 req R1: acquired
+Available: R2 
+New arrivals in ready queue: P4 P4: ready
+P1 rel R1: released
+Available: R1 R2 
+New arrivals in ready queue: P5 P5: ready
+P1 req R2: acquired
+Available: R1 
+New arrivals in ready queue: P6 P6: ready
+P1 rel R2: released
+Available: R1 R2 
+P1 terminated
+P2 req R1: acquired
+Available: R2 
+P2 req R2: acquired
+Available: 
+P2 rel R1: released
+Available: R1 
+P2 rel R2: released
+Available: R1 R2 
+P2 terminated
+P3 req R1: acquired
+Available: R2 
+P3 req R2: acquired
+Available: 
+P3 rel R1: released
+Available: R1 
+P3 rel R2: released
+Available: R1 R2 
+P3 terminated
+P4 req R2: acquired
+Available: R1 
+P4 req R1: acquired
+Available: 
+P4 rel R1: released
+Available: R1 
+P4 rel R2: released
+Available: R1 R2 
+P4 terminated
+P5: no instruction to execute
+P5 terminated
+P6: no instruction to execute
+P6 terminated
+
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P1 P2 P3 P4 P5 P6 

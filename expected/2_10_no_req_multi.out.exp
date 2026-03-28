@@ -1,0 +1,14 @@
+
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1 rel R1: error nothing to release
+P1 terminated
+P2 rel R2: error nothing to release
+P2 terminated
+P3 rel R3: error nothing to release
+P3 terminated
+
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P1 P2 P3 

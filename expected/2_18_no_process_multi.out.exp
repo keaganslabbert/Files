@@ -1,0 +1,17 @@
+
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1 req R1: acquired
+Available: R2 
+P1 rel R1: released
+Available: R1 R2 
+P1 req R2: acquired
+Available: R1 
+P1 rel R2: released
+Available: R1 R2 
+P1 terminated
+
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P1 
