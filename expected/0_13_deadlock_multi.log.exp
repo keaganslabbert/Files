@@ -1,0 +1,21 @@
+P1 req R1: acquired
+P2: ready
+P1: ready
+P2 req R2: acquired
+P3: ready
+P2: ready
+P3 req R2: acquired
+P6: ready
+P3: ready
+P7: ready
+P4: ready
+P4 req R3: acquired
+P5: ready
+P4: ready
+P5 req R4: acquired
+P5 rel R4: released
+P4 req R2: waiting
+P3 req R3: waiting
+P2 req R1: waiting
+P1 req R2: waiting
+Deadlock detected:Deadlock detected:

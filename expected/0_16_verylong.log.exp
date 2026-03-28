@@ -1,0 +1,76 @@
+P3 req R1: acquired
+P4: ready
+P3: ready
+P4 req R1: waiting
+P5: ready
+P5 req R1: waiting
+P6: ready
+P6 req R1: waiting
+P3 req R2: acquired
+P3 rel R1: released
+Wake up process P4 waiting for R1
+P4: ready
+P3: ready
+P4 req R1: acquired
+P4 req R2: waiting
+P3 rel R2: released
+Wake up process P4 waiting for R2
+P4: ready
+P3: ready
+P4 req R2: acquired
+P4 rel R1: released
+Wake up process P5 waiting for R1
+P5: ready
+P4: ready
+P5 req R1: acquired
+P5 req R2: waiting
+P4 rel R2: released
+Wake up process P5 waiting for R2
+P5: ready
+P4: ready
+P5 req R2: acquired
+P5 rel R1: released
+Wake up process P6 waiting for R1
+P6: ready
+P5: ready
+P6 req R1: acquired
+P6 req R2: waiting
+P5 rel R2: released
+Wake up process P6 waiting for R2
+P6: ready
+P5: ready
+P6 req R2: acquired
+P6 rel R1: released
+P6 rel R2: released
+P6 req R1: acquired
+P6 req R2: acquired
+P6 rel R1: released
+P6 rel R2: released
+P5 req R1: acquired
+P5 req R2: acquired
+P5 rel R1: released
+P5 rel R2: released
+P4 req R1: acquired
+P4 req R2: acquired
+P4 rel R1: released
+P4 rel R2: released
+P3 req R1: acquired
+P3 req R2: acquired
+P3 rel R1: released
+P3 rel R2: released
+P2 req R1: acquired
+P2 req R2: acquired
+P2 rel R1: released
+P2 rel R2: released
+P2 req R1: acquired
+P2 req R2: acquired
+P2 rel R1: released
+P2 rel R2: released
+P1 req R1: acquired
+P1 req R2: acquired
+P1 rel R1: released
+P1 rel R2: released
+P1 req R1: acquired
+P1 req R2: acquired
+P1 rel R1: released
+P1 rel R2: released

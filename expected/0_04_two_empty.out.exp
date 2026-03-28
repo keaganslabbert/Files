@@ -1,0 +1,13 @@
+
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P1: no instruction to execute
+P1 terminated
+New arrivals in ready queue: P2 P2: ready
+P2: no instruction to execute
+P2 terminated
+
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P1 P2 

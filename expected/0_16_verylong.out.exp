@@ -1,0 +1,408 @@
+
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P3 req R1: acquired
+Available: R2 
+New arrivals in ready queue: P4 P4: ready
+P3: ready
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 P4 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P4 req R1: waiting
+New arrivals in ready queue: P5 P5: ready
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 P5 
+-----------------------------------Waiting: P4 
+-----------------------------------Terminated: 
+P5 req R1: waiting
+New arrivals in ready queue: P6 P6: ready
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P6 
+-----------------------------------Waiting: P4 P5 
+-----------------------------------Terminated: 
+P6 req R1: waiting
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: P4 P5 P6 
+-----------------------------------Terminated: 
+P3 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 
+-----------------------------------Waiting: P4 P5 P6 
+-----------------------------------Terminated: 
+P3 rel R1: released
+Available: R1 
+Wake up process P4 waiting for R1
+P4: ready
+P3: ready
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 P4 P3 
+-----------------------------------Waiting: P5 P6 
+-----------------------------------Terminated: 
+P4 req R1: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: P5 P6 
+-----------------------------------Terminated: 
+P4 req R2: waiting
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: P5 P6 P4 
+-----------------------------------Terminated: 
+P3 rel R2: released
+Available: R2 
+Wake up process P4 waiting for R2
+P4: ready
+P3: ready
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 P4 P3 
+-----------------------------------Waiting: P5 P6 
+-----------------------------------Terminated: 
+P4 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: P5 P6 
+-----------------------------------Terminated: 
+P4 rel R1: released
+Available: R1 
+Wake up process P5 waiting for R1
+P5: ready
+P4: ready
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 P5 P4 
+-----------------------------------Waiting: P6 
+-----------------------------------Terminated: 
+P5 req R1: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P4 
+-----------------------------------Waiting: P6 
+-----------------------------------Terminated: 
+P5 req R2: waiting
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P4 
+-----------------------------------Waiting: P6 P5 
+-----------------------------------Terminated: 
+P4 rel R2: released
+Available: R2 
+Wake up process P5 waiting for R2
+P5: ready
+P4: ready
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 P5 P4 
+-----------------------------------Waiting: P6 
+-----------------------------------Terminated: 
+P5 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P4 
+-----------------------------------Waiting: P6 
+-----------------------------------Terminated: 
+P5 rel R1: released
+Available: R1 
+Wake up process P6 waiting for R1
+P6: ready
+P5: ready
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P4 P6 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P6 req R1: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 P4 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P6 req R2: waiting
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 P4 P5 
+-----------------------------------Waiting: P6 
+-----------------------------------Terminated: 
+P5 rel R2: released
+Available: R2 
+Wake up process P6 waiting for R2
+P6: ready
+P5: ready
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P4 P6 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P6 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 P4 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P6 rel R1: released
+Available: R1 
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 P4 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P6 rel R2: released
+Available: R1 R2 
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 P4 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P6 req R1: acquired
+Available: R2 
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 P4 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P6 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 P4 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P6 rel R1: released
+Available: R1 
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 P4 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P6 rel R2: released
+Available: R1 R2 
+P6 terminated
+
+-----------------------------------Running on kernel thread 0: P6 
+-----------------------------------Ready: P1 P2 P3 P4 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 
+P5 req R1: acquired
+Available: R2 
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P4 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 
+P5 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P4 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 
+P5 rel R1: released
+Available: R1 
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P4 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 
+P5 rel R2: released
+Available: R1 R2 
+P5 terminated
+
+-----------------------------------Running on kernel thread 0: P5 
+-----------------------------------Ready: P1 P2 P3 P4 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 
+P4 req R1: acquired
+Available: R2 
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 
+P4 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 
+P4 rel R1: released
+Available: R1 
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 
+P4 rel R2: released
+Available: R1 R2 
+P4 terminated
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 
+P3 req R1: acquired
+Available: R2 
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 
+P3 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 
+P3 rel R1: released
+Available: R1 
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 
+P3 rel R2: released
+Available: R1 R2 
+P3 terminated
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 
+P2 req R1: acquired
+Available: R2 
+
+-----------------------------------Running on kernel thread 0: P2 
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 
+P2 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P2 
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 
+P2 rel R1: released
+Available: R1 
+
+-----------------------------------Running on kernel thread 0: P2 
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 
+P2 rel R2: released
+Available: R1 R2 
+
+-----------------------------------Running on kernel thread 0: P2 
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 
+P2 req R1: acquired
+Available: R2 
+
+-----------------------------------Running on kernel thread 0: P2 
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 
+P2 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P2 
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 
+P2 rel R1: released
+Available: R1 
+
+-----------------------------------Running on kernel thread 0: P2 
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 
+P2 rel R2: released
+Available: R1 R2 
+P2 terminated
+
+-----------------------------------Running on kernel thread 0: P2 
+-----------------------------------Ready: P1 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 
+P1 req R1: acquired
+Available: R2 
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 
+P1 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 
+P1 rel R1: released
+Available: R1 
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 
+P1 rel R2: released
+Available: R1 R2 
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 
+P1 req R1: acquired
+Available: R2 
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 
+P1 req R2: acquired
+Available: 
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 
+P1 rel R1: released
+Available: R1 
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 
+P1 rel R2: released
+Available: R1 R2 
+P1 terminated
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 P1 
+
+-----------------------------------Ready: 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: P6 P5 P4 P3 P2 P1 

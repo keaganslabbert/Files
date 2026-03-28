@@ -1,0 +1,54 @@
+
+-----------------------------------Ready: P1 P2 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P3 req R1: acquired
+Available: R2 
+New arrivals in ready queue: P4 P4: ready
+P3: ready
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 P4 P3 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P4 req R2: acquired
+Available: 
+New arrivals in ready queue: P5 P5: ready
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 P5 
+-----------------------------------Waiting: 
+-----------------------------------Terminated: 
+P4 req R1: waiting
+New arrivals in ready queue: P6 P6: ready
+
+-----------------------------------Running on kernel thread 0: P4 
+-----------------------------------Ready: P1 P2 P3 P5 P6 
+-----------------------------------Waiting: P4 
+-----------------------------------Terminated: 
+P3 req R2: waiting
+
+-----------------------------------Running on kernel thread 0: P3 
+-----------------------------------Ready: P1 P2 P5 P6 
+-----------------------------------Waiting: P4 P3 
+-----------------------------------Terminated: 
+P1 req R1: waiting
+
+-----------------------------------Running on kernel thread 0: P1 
+-----------------------------------Ready: P2 P5 P6 
+-----------------------------------Waiting: P4 P3 P1 
+-----------------------------------Terminated: 
+P5: no instruction to execute
+P5 terminated
+P6: no instruction to execute
+P6 terminated
+P2 req R1: waiting
+
+-----------------------------------Running on kernel thread 0: P2 
+-----------------------------------Ready: 
+-----------------------------------Waiting: P4 P3 P1 P2 
+-----------------------------------Terminated: P5 P6 
+Deadlock detected:
+-----------------------------------Ready: 
+-----------------------------------Waiting: P4 P3 P1 P2 
+-----------------------------------Terminated: P5 P6 

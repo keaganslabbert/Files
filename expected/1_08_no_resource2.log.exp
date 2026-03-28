@@ -1,0 +1,3 @@
+P1 req R2: waiting
+P2 req R3: waiting
+No deadlock detected, but blocked process(es) found:
