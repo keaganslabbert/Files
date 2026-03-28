@@ -1,0 +1,10 @@
+--- tests/expected/2_20_unknown_instr.log.exp	2026-03-27 17:36:15.000000000 +0200
++++ tests/logs/2_20_unknown_instr.log	2026-03-28 16:43:36.989293175 +0200
+@@ -2,7 +2,3 @@
+ P1 rel R1: released
+ P1 req R2: acquired
+ P1 rel R2: released
+-P3 req R1: acquired
+-P3 req R2: acquired
+-P3 rel R1: released
+-P3 rel R2: released

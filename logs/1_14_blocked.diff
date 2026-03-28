@@ -1,0 +1,6 @@
+--- tests/expected/1_14_blocked.log.exp	2026-03-27 17:36:15.000000000 +0200
++++ tests/logs/1_14_blocked.log	2026-03-28 16:43:35.674326071 +0200
+@@ -1,2 +1 @@
+ P1 req R2: waiting
+-No deadlock detected, but blocked process(es) found:
+\ No newline at end of file

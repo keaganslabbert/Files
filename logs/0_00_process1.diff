@@ -1,0 +1,20 @@
+--- tests/expected/0_00_process1.log.exp	2026-03-27 17:36:15.000000000 +0200
++++ tests/logs/0_00_process1.log	2026-03-28 16:43:35.138168544 +0200
+@@ -1,15 +1,6 @@
+-P3 req R1: acquired
+ P4: ready
++P3 req R1: acquired
++P6: ready
+ P3 req R2: acquired
+-P5: ready
+ P3 rel R1: released
+-P6: ready
+ P3 rel R2: released
+-P1 req R1: acquired
+-P1 rel R1: released
+-P1 req R2: acquired
+-P1 rel R2: released
+-P2 req R1: acquired
+-P2 req R2: acquired
+-P2 rel R1: released
+-P2 rel R2: released

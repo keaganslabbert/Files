@@ -1,0 +1,11 @@
+--- tests/expected/0_03_two_proc.log.exp	2026-03-27 17:36:15.000000000 +0200
++++ tests/logs/0_03_two_proc.log	2026-03-28 16:43:35.249045144 +0200
+@@ -1,5 +1,5 @@
+-P1 req R1: acquired
+ P2: ready
++P1 req R1: acquired
+ P1 rel R1: released
+-P2 req R1: acquired
+-P2 rel R1: released
++Wake up process P2 waiting for R1
++P2: ready

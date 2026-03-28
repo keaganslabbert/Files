@@ -1,0 +1,10 @@
+--- tests/expected/2_15_rr_stress.log.exp	2026-03-27 17:36:15.000000000 +0200
++++ tests/logs/2_15_rr_stress.log	2026-03-28 16:43:35.730260562 +0200
+@@ -1,7 +1,3 @@
+-P1 req R1: acquired
+-P1 rel R1: released
+-P1 req R1: acquired
+-P1 rel R1: released
+ P2 req R2: acquired
+ P2 rel R2: released
+ P2 req R2: acquired

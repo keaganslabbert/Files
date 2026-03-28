@@ -1,0 +1,10 @@
+--- tests/expected/1_06_over_ready.log.exp	2026-03-27 17:36:15.000000000 +0200
++++ tests/logs/1_06_over_ready.log	2026-03-28 16:43:35.371984619 +0200
+@@ -1,6 +1 @@
+-P1 req R1: acquired
+-P1 rel R1: released
+-P2 req R1: acquired
+-P2 rel R1: released
+-P3 req R1: acquired
+-P3 rel R1: released
++P1 req R1: waiting

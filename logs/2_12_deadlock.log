@@ -1,0 +1,6 @@
+P5: ready
+P2 req R1: acquired
+P2 req R2: waiting
+P4 req R2: acquired
+P4 req R1: waiting
+P2 req R2: waiting

@@ -1,0 +1,35 @@
+P4: ready
+P1 req R1: acquired
+P1 req R2: acquired
+P1 rel R1: released
+Wake up process P2 waiting for R1
+P2: ready
+P1 rel R2: released
+Wake up process P3 waiting for R2
+P3: ready
+P1 req R1: waiting
+P3 req R2: acquired
+P3 rel R1: released
+Wake up process P4 waiting for R1
+P4: ready
+P3 rel R2: released
+P3 req R1: acquired
+P3 req R2: acquired
+P3 rel R1: released
+Wake up process P5 waiting for R1
+P5: ready
+P3 rel R2: released
+P6 req R1: acquired
+P6 req R2: acquired
+P6 rel R1: released
+Wake up process P2 waiting for R1
+P2: ready
+P6 rel R2: released
+Wake up process P2 waiting for R2
+P2: ready
+P6 req R1: waiting
+P1 req R2: acquired
+P1 rel R1: released
+Wake up process P4 waiting for R1
+P4: ready
+P1 rel R2: released

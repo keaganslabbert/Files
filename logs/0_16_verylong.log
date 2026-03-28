@@ -1,0 +1,9 @@
+P5: ready
+P5 req R1: waiting
+P2 req R1: waiting
+P6 req R2: acquired
+P6 rel R1: released
+Wake up process P3 waiting for R1
+P3: ready
+P6 rel R2: released
+P6 req R1: waiting
